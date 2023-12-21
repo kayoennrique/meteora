@@ -12,10 +12,7 @@ const ListaProdutosCarrinho = ({ carrinho }) => {
       ) : (
         carrinho.map((itemCarrinho) => {
           return location.pathname === "/carrinho" ? (
-            <ItemCarrinho
-              key={itemCarrinho.id}
-              itemCarrinho={itemCarrinho}
-            />
+            <ItemCarrinho key={itemCarrinho.id} itemCarrinho={itemCarrinho} />
           ) : (
             <ItemCarrinhoSuspenso
               key={itemCarrinho.id}
