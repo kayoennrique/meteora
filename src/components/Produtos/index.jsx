@@ -20,10 +20,13 @@ const Produtos = () => {
       ]);
     }
 
-    setCarrinho((carrinhoAnterior) => {
-      if (itemDoCarrinho.id === novoProduto.id) itemDoCarrinho.quantidade += 1;
-      return itemDoCarrinho;
-    });
+    setCarrinho((carrinhoAnterior) =>
+      carrinhoAnterior.map((itemDoCarrinho) => {
+        if (itemDoCarrinho.id === novoProduto.id)
+          itemDoCarrinho.quantidade += 1;
+        return itemDoCarrinho;
+      })
+    );
   }
 
   return (
