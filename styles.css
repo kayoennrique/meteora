@@ -10,6 +10,14 @@
     width: 325px;
 }
 
+.lilac-button {
+    background-color: #9353FF;
+}
+
+.green-lemon {
+    color: #DAFF01;
+}
+
 @media(min-width: 768px) {
 
     .div-news {
